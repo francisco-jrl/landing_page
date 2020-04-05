@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente Baloo Thambi 2, añadida desde fonts.google.com -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Hoja de estilo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <title>Café Expresso</title>
+</head>
+
+<body>
+    <!-- Contenedor de navbar -->
+    <div class="navbar">
+        <!-- Contenedor del logo para navbar -->
+        <div class="img-cont-nav">
+            <img src="img/LogoCafeExpresso.png" alt="logo" class="img-nav" id="img-move">
+        </div>
+        <h1 class="title-nav" id="move-title">CELEBRANDO NUESTRO 10 ANIVERSARIO</h1>
+    </div>
+
+    <!-- Contenedor de Contenido Principal -->
+    <div class="contenedor">
+
+        <!-- Contenedor de la imagen -->
+        <div class="cont-img">
+            <img src="img/BolaCafeMolido.png" alt="café" class="img-bolsa" id="bolsa">
+        </div>
+
+        <!-- Contenedor del formulario -->
+        <div class="cont-info">
+            <div class="info">
+                <h1 class="titulo-descuento">REGÍSTRATE Y OBTÉN UN 25% DE DESCUENTO EN NUESTROS PRODUCTOS</h1>
+                <form id="formulario">
+                    <div>
+                        <ul id="errores"></ul>
+                    </div>
+                    <div class="form-cont">
+                        <label class="label-form">Nombre: </label>
+                        <input type="text" class="text-form"  id="nombre" required>   
+                    </div>
+                    <div class="form-cont">
+                        <label class="label-form">Teléfono / Celular: </label>
+                        <input type="text" class="text-form" id="celular" required>    
+                    </div>
+                    <div class="form-cont">
+                        <labe class="label-form">Correo Electrónico: </label>
+                        <input type="text" class="text-form" id="correo" required>    
+                    </div>
+                    <input type="button" value="REGÍSTRATE" class="btn" id="guardar">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pie de página -->
+    <div class="footer">
+        <div class="frase">
+            &ldquo;
+            El buen café endulzado, delicioso es más que mil besos, dulce sabe
+            cual vino moscatel, café, sí, ¡es café lo que quiero! Y quien deseare
+            darme a saborear una exquisita bebida, venga a ofrecerme una taza de café.
+        </div>
+    </div>
+    
+    <!-- Contenedor de la información de quien desarrollo la página-->
+    <div class="contact">
+        <p class="contact-info"><strong>Desarrollado por: </strong> Francisco José Rangel Leonor</p>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*
+    "url(../img/background.jpg);"
+    Imagen de granos de café
+*/
+body {
+  width: 100%;
+  background-image: url(../img/background.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y; }
+
+.navbar {
+  display: flex;
+  background-color: rgba(63, 62, 62, 0.1);
+  align-items: center;
+  border-bottom-right-radius: 50px;
+  width: 60%;
+  height: 14vh; }
+  .navbar .img-cont-nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 5px; }
+    .navbar .img-cont-nav .img-nav {
+      width: 100px;
+      border-radius: 20px; }
+      @media (max-width: 500px) {
+        .navbar .img-cont-nav .img-nav {
+          width: 75px; } }
+      @media (max-width: 360px) {
+        .navbar .img-cont-nav .img-nav {
+          width: 60px; } }
+  .navbar .title-nav {
+    margin-left: 5px;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    color: #7c3c17; }
+    @media (max-width: 768px) {
+      .navbar .title-nav {
+        font-size: 1.5rem; } }
+    @media (max-width: 500px) {
+      .navbar .title-nav {
+        font-size: 1.2rem; } }
+    @media (max-width: 360px) {
+      .navbar .title-nav {
+        font-size: 1rem; } }
+
+/*
+    Id del elemento titulo de la barra superior
+    Con la configuración de su animación
+*/
+#move-title {
+  animation-name: move-title-nav;
+  animation-duration: 1.5s; }
+
+@keyframes move-title-nav {
+  0% {
+    margin-bottom: 150px; }
+  25% {
+    top: 0px; } }
+@keyframes move {
+  0% {
+    margin-left: -150px; }
+  25% {
+    top: 0px; } }
+/*
+    Hace que el logo salga de la parte izquierda
+    Con la configuración de su animación
+    La cual se encuentra arriba con el nombre de "move"
+*/
+#img-move {
+  animation-name: move;
+  animation-duration: 1.5s;
+  transition-duration: 2s;
+  /*
+      Al pasar el mouse por encima el logo rotara
+  */ }
+  #img-move:hover {
+    transform: rotate(360deg);
+    width: 80px; }
+
+/*
+    Hace que la imagen de la bolsa de café aparezca 
+    y vaya tomando su tamaño
+*/
+#bolsa {
+  animation-name: bolsa;
+  animation-duration: 1.5s;
+  transition-duration: 2s; }
+
+@keyframes bolsa {
+  0% {
+    margin-left: -610px;
+    transform: scale(-1, 1); } }
+.contenedor {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .contenedor {
+      display: block; } }
+  .contenedor .cont-img {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 50%; }
+    .contenedor .cont-img .img-bolsa {
+      width: 80%;
+      padding: 20px 10px; }
+    @media (max-width: 768px) {
+      .contenedor .cont-img {
+        width: 100%;
+        margin-left: 0px;
+        justify-content: center; }
+        .contenedor .cont-img .img-bolsa {
+          padding: 10px;
+          width: 80%; } }
+  .contenedor .cont-info {
+    width: 40%;
+    height: 80%;
+    background-color: #c5a663;
+    border-radius: 75px;
+    border: 2px solid #7c3c17;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+    @media (max-width: 768px) {
+      .contenedor .cont-info {
+        width: 100%;
+        border-radius: 0;
+        border: 0 none;
+        height: 50%;
+        margin-bottom: 0px; } }
+    .contenedor .cont-info .info {
+      padding: 10px;
+      text-align: center;
+      display: block;
+      align-items: center; }
+      .contenedor .cont-info .info .form-cont {
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 10px; }
+        .contenedor .cont-info .info .form-cont .label-form {
+          font-size: 1.2rem;
+          font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+          font-size: 1.3rem; }
+        .contenedor .cont-info .info .form-cont .text-form {
+          width: 98%;
+          height: 25px;
+          border-radius: 10px;
+          border: 2px solid #7c3c17;
+          font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+          font-size: 1.2rem;
+          padding: 5px; }
+      .contenedor .cont-info .info .btn {
+        margin-top: 10px;
+        padding: 5px 20px;
+        background-color: #7c3c17;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+        font-size: 1.5rem; }
+        .contenedor .cont-info .info .btn:hover {
+          margin-top: 8px;
+          background-color: #c5a663;
+          border: 1px solid;
+          color: #7c3c17; }
+
+.titulo-descuento {
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #68300f; }
+
+.footer {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  background-image: url(../img/background2.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  align-items: center; }
+  .footer .frase {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .footer .frase {
+        font-size: 2rem; } }
+
+.contact {
+  background-color: #000000;
+  width: 100%; }
+  .contact .contact-info {
+    color: #ffffff;
+    margin: 0;
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: right; }
+
+#errores {
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 1.2rem;
+  list-style: none; }
+
+/*# sourceMappingURL=style.css.map */
